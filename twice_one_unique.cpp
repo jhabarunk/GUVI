@@ -47,3 +47,58 @@ int main()
   return 0;
 }
 Status API Training Shop Blog About
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "logstash-18": [
+   {
+    "credentials": {
+     "hostname": "10.72.7.26",
+     "password": "9rhzp9fsol5pdupz",
+     "ports": {
+      "514/tcp": "32804",
+      "9200/tcp": "32805",
+      "9300/tcp": "32806"
+     },
+     "username": "b7jlmyjfegw6g6it"
+    },
+    "label": "logstash-18",
+    "name": "logstash-service",
+    "plan": "free",
+    "provider": null,
+    "syslog_drain_url": "syslog://10.72.7.26:32804",
+    "tags": [
+     "logstash14",
+     "logstash",
+     "syslog"
+    ],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "61234800-f973-4fbb-a921-b335aadc938a",
+  "application_name": "thingsee-app",
+  "application_uris": [
+   "thingsee-app.run.aws-usw02-pr.ice.predix.io"
+  ],
+  "application_version": "a734eb67-8145-494a-94c8-57da774b5ed1",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 512
+  },
+  "name": "thingsee-app",
+  "space_id": "c13f0fe8-9dc4-4c09-91f0-69aa21cab4c9",
+  "space_name": "dev",
+  "uris": [
+   "thingsee-app.run.aws-usw02-pr.ice.predix.io"
+  ],
+  "users": null,
+  "version": "a734eb67-8145-494a-94c8-57da774b5ed1"
+ }
+}
